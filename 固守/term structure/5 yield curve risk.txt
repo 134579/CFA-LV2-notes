@@ -1,0 +1,7 @@
+risk
+1. level， 最重要
+	所有理略同向变化
+2. steepness 
+	长短期利率变化方向不同
+2. curvature
+	长中短期利率变化方向不同
