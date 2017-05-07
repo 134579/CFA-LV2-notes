@@ -1,0 +1,100 @@
+	20%-50%
+	incluence
+
+一项记账
+	a公司花费600收购b公司，b公司net identifiable asset = 560
+	记账方法：
+		
+		a's B/S
+		cash -= 600
+		invest += 600
+			FV of net identifiable asset of b = 560
+				book value = 440
+				appreciation = 120 : 溢价
+			goodwill = 40
+
+	goodwill:一项记账， 不单独列出
+
+问题：
+	appreciation导致额外折旧 -> 调整母公司从小公司收到的NI
+	
+	关联交易
+	
+	
+	例子：
+	2017年初，P花费12000收购E公司20%股份。
+	期初：2017.01.01
+		E：
+		B/S						
+		Asset:					Liablity: = 0
+		cash = +10000			Equity:
+		pp&e = +20000			Capital = +20000
+			A.D = -4000			R.E = +6000
+		-> asset = +26000		equity = +26000
+		
+		fair value
+		B/S
+		Asset:
+		cash = +10000
+		pp&e = +30000
+		-> asset = +40000
+		
+		P：
+		Asset: 											Liablity: = 0
+		cash = +50000									Equity:
+		invest = +12000									capital = +30000
+			FV = +26000*0.2 = +5200						R.E = +32000
+			appreciation = (40000-26000)*0.2 = +2800	equity = +62000
+			goodwill = +4000
+		-> asset = +62000
+		
+	2017年度，E的NI = 7000,发放Div = 1000
+	期末；2017.12.31
+		E:
+		I/S real:
+		sales = +11000
+		Depr = -4000
+		-> NI = +7000
+		
+		B/S:
+		Asset:								Liablity: = 0
+		cash = +10000 + 10000 = +20000		Equity:
+		pp&e = +20000						Capital = +20000
+			A.D = -4000	- 4000 = -8000		R.E = +6000 + 7000 - 1000 = +12000
+		-> asset = +32000					equity = +32000	
+		
+		由于溢价折旧，导致E的I/S变化
+		E:
+		I/S P's view:
+		sales = +11000
+		Depr = -4000
+		Appr Depr = -(14000/4) = -3500
+		-> NI' = +3500
+		
+		P实际投资收益，进入P's I/S:
+		equity income = +(3500 - 1000)*0.2 = +500
+		
+		P：
+		Asset: 													Liablity: = 0
+		cash = +50000 											Equity:
+		invest = + 12000 + 500									capital = +30000
+			FV = *												R.E = +32000 + 500
+			Appr = *											equity = +62500
+			goodwill = +4000
+		-> asset = 62500
+		注意：由于采用oneline consolidation, 只变化invest项
+		如果不是one line consolidation,
+		P's B/S应该为这样：
+		Asset: 													Liablity: = 0
+		cash = cash + (11000-1000)*0.2 = 52000					Equity:
+		invest = + 10500										capital = +30000
+			FV = FV - 4000*0.2 = +4400							R.E = +32000 + 500
+			Appr = Appr - Appr/4 = +2100						equity = +62500
+			goodwill = +4000
+		-> asset = 62500
+		总asset与one line consolidation相同（但是不用这种方法）
+		
+		
+		
+		
+		

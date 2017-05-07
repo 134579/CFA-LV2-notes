@@ -1,0 +1,132 @@
+公司投资
+	passive
+		financial asset          
+			no significant influence 
+			<20%
+			HTM , AFS , fair value through P/L
+			 
+	active  
+		associate
+			influence
+			20%-50%
+			※※equity method
+		
+		subsidiary
+			control
+			>50%
+			※※※acquisition method(合并会计报表)
+		
+		joint venture(合资公司)
+			shared control
+			1/n
+			equity method(or proportional consolidation)
+			
+		
+
+HTM
+	only debt
+	armotized cost
+	例：
+		买一个债券,face = 1000, coupon rate = 10%, I/Y = 8%, N = 3
+		答：
+		PV = 1051.54
+		用Base法则：
+					B            A       S        E
+		n = 1年末，1051.54 + 1051.54*8% - 100 = 1035.66
+		n = 2年末，1035.66 + 1035.66*8% - 100 = 1018.51
+		n = 3年末，1018.51 + 1018.51*8% - 100 = 1000
+												armotized cost
+		n = 0
+			B/S
+				cash -= 1051.54
+				HTM asset += 1051.54
+			
+		n = 1
+			I/S
+			+ interest income 
+				1051.54 * 0.08 = 84.1232
+			B/S
+			cash += 100
+			HTM asset = HTM asset + interest income - 100
+				
+	如果中途债券价格变了
+		如果中途卖了。realized gain/loss => I/S
+		没卖。unrealized gain/loss => 不计
+
+fair value through profit or loss
+	realized gain/loss => I/S
+	unrealized gain/loss => I/S
+	
+AFS
+	公允价值计价
+	realized gain/loss => I/S
+	unrealized gain/loss => OCI
+	
+	debt:
+		例外：由于FX变化，导致FV变动，
+			IFRS:
+				※unrealized gain/loss => I/S
+		GAAP:
+			unrealized gain/loss => OCI
+			
+	※在卖出AFS时，所有在OCI中的 unrealized gain/loss进入当期I/S
+	
+summary
+	HTM
+		armotized value
+		每期interest income => I/S
+		
+		unrealized gain/loss => none
+		realized gain/loss => I/S
+		
+	AFS
+		fair value
+		每期interest income => I/S
+		
+		unrealized gain/loss => OCI
+		realized gain/loss => I/S
+	
+		当realized时， unrealized gain/loss从OCI进入I/S
+	
+financial asset reclassfication
+	GAAP, 三个可以互相转
+	IFRS，只有HTM和AFS可以互相转
+		
+		
+impairment of HTM and AFS
+	GAAP
+		non-tempory decline in value => impairment
+		reverse not allowed, gain/loss => OCI
+	IFRS
+		debt:
+			impairment => I/S
+				loss event
+					default on principle or interest
+					bankruptcy
+			reverse => I/S
+				if event disappear
+		equity:
+			impairment
+				loss event => 
+					substaintial or extended decline
+					non-recoverable				
+			reverse not allowed
+				gain/loss => OCI
+		
+		AFS
+			unrealized gain/loss => OCI
+			impairment时， 把OCI中的 gain/loss放入I/S
+		
+		
+		
+IFRS		
+					HTM			AFS
+	impairment		I/S			OCI=>I/S
+	reverse			debt	debt	equity
+					I/S		I/S		=>OCI
+
+GAAP（更保守）
+					HTM			AFS
+	impairment		I/S			OCI=>I/S
+	reverse					OCI
+					

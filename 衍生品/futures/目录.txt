@@ -1,0 +1,92 @@
+1. FP = S0 + Cost - Benefit
+	Cost = Carrying Cost + Oppotunity Cost(Rf)
+
+期货
+	现金流
+		0							T
+		+Vlong0 = 0:卖期货			FP - ST
+		-S0:持有现货				+ST
+		+PVD0:收股利
+		
+		=> 0时刻所有现金流折现为0
+		Vlong0 - S0 + PVD0 + FP/(1+R)^T = 0
+		Vlong0 = S0 - PVD0 - FP/(1+R)^T = 0
+	
+	pricing:
+		FP = (S0 - PVD0)(1+R)^T
+	
+	valuation:
+		Vlong = St - PVDt - FP/(1+R)^(T-t)
+			  
+
+指数期货
+	连续复利收益率
+		1 + Rf = e^Rc
+		=> Rc = ln(1+Rf)
+	
+	pricing:
+		FP = S0 * e^(Rc - δ)T, δ为连续股息率
+	
+	valuation:
+		Vlong = St/e^(δ(T-t)) - FP/e^(Rc*(T-t))
+		
+外汇期货
+	标价方式:
+		...DC/FC, DC本币，FC外币
+		1外币等于S个本币
+		6.95￥/$, S = 6.95
+	现金流	
+		0 							T
+		+1 FC:借入1FC				-(1+Rf)^T FC:还FC
+		-S0 DC:借出S0DC				+S0(1+Rd)^T DC:收到DC
+		-VLong0 = 0:				FC换DC
+		
+		=> 0时刻现金流为0
+		全换成DC: 
+			+S0 - S0 - ST(1+Rf)^T + S0(1+Rd)^T = 0
+			FP = ST = S0(1+Rd)^T/(1+Rf)^T
+	pricing:
+		FP = S0 * (1+Rd)^T/(1+Rf)^T
+	valuation:
+		Vlong = St/(1+Rf)^(T-t) - FP/(1+Rd)^(T-t)
+	注：
+		可以将foreign currency当做股票理解，Rd为foreign currency股息率,
+		t = 0, fc价格为S0 * DC
+		t = T, fc价格为FP * DC,
+		
+FRA
+	定义
+		FRA 1x4 at FR(forward rate):
+		long方：在t=1时刻，可以以利率FR从short方借钱，利息与本金在T=4偿还
+	交割
+		FRA m * n
+		FRA 1 * 4
+		0						1				4
+		0						m				n
+		签订FRA				settlement		借款合约到期
+		libor(0,m)			libor(m,n)
+							FR
+		settlement时，收益为:
+			gain = notional principle * (libor(m,n) - FR) * (n-m)/360
+				/ (1+libor(m,n)*(n-m)/360)
+		
+		
+	pricing
+		0						1				4
+		0						m				n
+		libor(0,1)--------------
+		libor(0,4)-------------------------------
+							libor(1,4)-----------
+		=> (1 + libor(0,m)*30m/360)(1 + libor(m,n)*30(n-m)/360) = (1 + libor(0,n)*30n/360)
+		=> libor(m,n) = ...	
+		
+	valuation
+		0						1				4
+		0						m				n
+		cash flow:				+NP
+												-NP(1+FR*30(n-m)/360)
+					time = t
+					Vlong = PV收 - PV支
+						  = NP/(1+libor(m-t)*30(m-t)/360) - NP(1+FR*30(n-m)/360) /(1+ libor(t,n)*30(n-t)/360)
+						  
+						  

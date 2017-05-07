@@ -1,0 +1,27 @@
+acquisition method
+将子公司的Asset,Liablility全部加入母公司报表，母公司Cash减少，Equity增加minority interest少数股东权益
+
+P花费800收购S的80%股份，
+	P's B/S
+	Asset															Liablility
+	cash -= 80%(S's equity)											liability += S's liability
+	asset += S's asset
+	-> asset = P's asset + 100% S's asset - 80%(S's equity)			-> liability = P's liability + 100% S's liability 
+			 = P's asset + 20% S's asset + 80% S's liability
+																	
+																	MI = 20% S's equity
+																		
+																	Equity
+																	equity += 0
+													
+																	-> equity = P's equity 
+	两边依然是平的
+	
+	
+	B/S步骤：
+	1. 去掉母公司invest那项
+	2. 加上子公司asset,liability
+	3. 计算goodwill(GAAP:full GW, IFRS:full or partial GW)
+	4. 计算mi 
+	
+	

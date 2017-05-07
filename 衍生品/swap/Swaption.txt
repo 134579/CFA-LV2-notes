@@ -1,0 +1,17 @@
+swaption
+	a 2 x 5 swaption 
+	
+	t	0				2					5	
+		swaption		swaption
+		begin			end
+						swap begin			swap end
+
+payer swaption
+	option to enter a swap as fixed payer
+	看涨利率，看跌债券
+	t = 2时，期权内在价值 = spot rate - strike rate
+						  = s - k
+	
+
+receiver swaption
+	option to enter a swap as fixed receiver

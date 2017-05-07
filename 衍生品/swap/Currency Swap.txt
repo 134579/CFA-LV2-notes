@@ -1,0 +1,33 @@
+currency swap
+	货币互换
+	
+定义：
+	t=0时刻，以一种货币换另一种货币，并在swap到期之前定期支付获得的那种货币的利息给对手方。
+
+现金流（固定利率换固定利率）：
+	t = 0时刻：
+		汇率：S0 CNY/USD
+	
+	人民币利率:
+		r1,r2,r3,r4
+	美元利率：
+		u1,u2,u3,u4
+		
+		
+					t = 0		t = 1		t = 2		t = 3		t = 4
+	A公司（美国）	+S0 CNY		-S0*r1 CNY	-S0*r2 CNY	..			-S0*r4 - S0 CNY
+								+1*u1 USD	+1*u2 USD	..			+1*u4 + 1 USD
+	
+	
+	B公司（中国）	+1 USD		-1*u1 USD	-1*u2 USD	..			-1*u4 - 1 USD
+								+S0*r1 CNY	+S0*r2 CNY	..			+S0*r4 + S0 CNY
+								
+pricing
+	分别计算两种货币的swap rate
+		c = (1 - B4)/(B1 + B2 + B3 + B4), B1,B2,B3,B4分别为t=1,t=2,t=3.t=4的折现率
+	
+	
+	
+	
+固定换浮动
+	美元固定换欧元浮动

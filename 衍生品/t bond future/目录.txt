@@ -1,0 +1,68 @@
+t bond future
+标的：虚拟的30年期cr=6%国债
+	目的:
+		1.增加流动性
+		2.防止逼空
+		3.提升现货交易量
+交割：实物交割
+	可用来交割实物：面值0.1M，到期日>15y的所有国债品种
+
+conversion factor
+	用法
+		假设标准（虚拟）国债期货价格为FP，则使用conversion factor求出真实国债的期货价格
+				conversion factor	future price	交割债券个数
+		国债A			1.1				1.1*FP			1/1.1
+		国债B			1.2				1.2*FP			1/1.2
+		国债C			1.3				1.3*FP			1/1.3
+		国债D			0.9				0.9*FP			1/0.9
+	
+	计算方式：
+		cf = (PV of bond i)/(PV of hypothetical bond) at time = T (future expire day)
+		   = 到期时，国债i现值/标准国债现值
+
+clean/dirty price
+	dirty price：真实现价，按这个价格交易，在coupon派发前后会突变
+	clean price: 不包含accrued interest的债券价格
+		accrued interest：从上次coupon date至交易日的债券利息
+	原因：
+		dp是按照未来现金流折现得到的债券现值，由于债券交易时，bond卖出者自前一次coupon date已经持有了一段时间的债券。但由于coupon是离散的，因此卖出者没有收到这一段时间的利息。
+		因此，未来的现金流不能完全属于bond的购买者。
+		因此cp = dp - bond卖出者在[coupon date, 交易日]持有债券应获得的利息。cp总小于dp
+	
+pricing
+	if S0 is dirty price:
+		FP_dirty = (S_0 - PVC_0) * (1+Rf)^T 
+				 = S_0 * (1+Rf)^T - FVC_T
+	if S0 if clean price:
+		FP_dirty = (S_0 + AI_0 - PVC0) * (1+Rf)^T 
+				 = (S_0 + AI_0) * (1+Rf)^T - FVC_T
+	
+	FP_clean = FP_dirty - AI_T 
+			 = (S_0 + AI_0) * (1+Rf)^T - FVC - AI_T
+	
+	标准国债期货报价
+		FP_standard = FP_A / conversion factor of A
+		
+	
+例子：
+	问：
+		S0_clean = 1050, CR = 12%, semiannual, par = 1000
+		Rf = 5%, conversion factor = 1.2
+		现在t=0，上次付息日为-2 month，
+		有一个期货合约，T=3 month, 求FP
+	答：
+		-2			t=0	 	1			3			4
+		coupon							expire		coupon
+		
+		AI_0 = 2/12 * 12% * 1000 = 20
+		S0_dirty = 1050 + AI = 1070
+		PVC_0 = 0
+		FP_dirty = (S0_dirty - PVC_0) * (1+Rf)*0.25
+				 = (1070) * 1.05^0.25
+				 = 1083.1313
+		AI_T = 5/12 * 12% * 1000 = 50
+		FP_clean = FP_dirty - AI_T
+				 = 1033.1313
+				 
+		FP_standard = FP_A / CF
+					= 860.9427

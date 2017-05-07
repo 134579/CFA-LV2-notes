@@ -1,0 +1,34 @@
+PBO
+	未来养老金现值（未来工资）
+ABO
+	未来养老金现值（现在工资）
+	
+PBO计算：
+	
+	|_____________________|_______|
+	现在				退休	去世
+							|||||
+	PBO						每工作一年，退休后每年养老金增加退休时工资的1%
+	
+	
+funded status
+	funded status = FV of plan asset - PBO
+	
+	
+FV of plan asset
+	FV_e = FV_b + employer contribution + actual return - benefit paid to employee
+
+PBO
+	PBO_e = PBO_b 
+		+ current service cost : 由于雇员多工作一年导致的养老金净值变化 = PV(ΔPBO)
+		+ interest cost : PBO产生利息费用 = PBO_b * r
+		+ past service cost : 由于和员工的协议变化导致养老金增减
+		+ acturial loss : 精算调整导致养老金变化
+		- benefit paid to employee(和[FV of plan asset]中的一样)
+		
+考法：
+1. Base，算期末值
+2. 算某一项
+3. 一起考
+4. 考概念：benefit paid 变化时，funded status 不变
+

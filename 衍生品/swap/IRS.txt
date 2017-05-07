@@ -1,0 +1,119 @@
+IRS
+	long：支出固定，收入浮动
+	short：支出浮动，收入固定
+
+浮动利率债券定价：
+	|	|	|	|	|
+	0	1	2	3	4
+	
+	每年4次付息(1,2,3,4)
+	F_1 = par * r(0,1)
+	F_2 = par * r(1,1)
+	...
+	
+	逆推：
+	PV_3(付息之后) = (par + par * r(3,1)) / (1 + r(3,1))
+		 = par
+	PV_2 = (PV_3 + par * r(2,1)) / (1 + r(2,1))
+		 = par
+		 
+	所以在0,1,2,3时间点,债券PV = par
+	
+IRS pricing
+	PV_fix				-c		-c		-c		-c-par
+						|		|		|		|
+				0		1		2		3		4
+	PV_float	+par
+
+	支固定，收浮动
+	PV_IRS = PV_float - PV_fix
+		   = par - coupon(B1+B2+B3+B4) - par * B4
+		   = 0
+		   
+	=> cr(B1+B2+B3+B4) = 1 - B4
+		其中B1，B2分别为0-1,0-2折现因子
+		此处cr为非年化的
+		
+	p = 年化的cr
+		
+例子
+	问：
+		1 year, quarterly paid, 
+		libor:
+		r(0, 90 days) = 2.5%
+		r(0, 180 days) = 3%
+		r(0, 270 days) = 3.5%
+		r(0, 360 days) = 4%
+		calculate swap rate??
+	答：
+		B1 = 1/(1 + 90/360 * 2.5%) = 0.9938
+		B2 = 1/(1 + 180/360 * 3%) = 0.9852
+		B3 = 1/(1 + 270/360 * 3.5%) = 0.9744
+		B4 = 1/(1 + 1 * 4%) = 0.9615
+		
+		c(B1 + B2 + B3 + B4) + B4 = 1
+		=> c = (1 - B4) / (B1 + B2 + B3 + B4)
+			 = 0.0385 / 3.9149
+			 = 0.0098
+			 
+		CR = c * 4 = 3.93% 
+		注：CR和r(360 days)很接近
+		
+IRS valuation
+			-c		-c		-c		-c-par
+			|		|		|		|
+	0		1		2		3		4
+		t
+	求t时刻swap价值
+	
+	at time t, V_long = PV_float - PV_fix
+	PV_fix好算
+	
+	计算PV_float：
+		PV_1(coupon之后) = par
+		PV_1(coupon之前) = par + r(0,1) * par
+		=> PV_float = PV_1(coupon之前) * B(t,1-t)
+		
+	V_long = PV_float - PV_fix
+		
+例子：
+	问：
+		同上一题，求t = 30days的时候，IRS的value，
+		R(30, 60 days) = 3%
+		R(30, 150) = 3.5%
+		R(30, 240) = 4%
+		R(30, 330) = 4%
+	答：
+		算PV_fix：
+			c = 3.93% / 4 = 0.0098
+			par = 1
+			B1' = 1 / (1 + 60/360 * 3%) = 0.995
+			B2' = 1 / (1 + 150/360 * 3.5%) = 0.9856
+			B3' = 1 / (1 + 240/360 * 4%) = 0.9740
+			B4' = 1 / (1 + 330/360 * 4.5%) = 0.9604
+			PV_fix = c(B1'+B2'+B3'+B4') + par * B4'
+				   = 0.0098 * 3.9150 + 0.9604
+				   = 0.9988
+		算PV_float
+			PV_1 before coupon = par + R(0,90 day)/4 * par
+							   = 1 + 2.5%/4
+							   = 1.0063
+							   
+			PV_float = PV_1 before coupon * B1'
+					 = 1.0012
+		
+		value = PV_float - PV_fix
+			  = 1.0012 - 0.9988
+			  = 0.0024
+	
+	
+IRS与FRA的关系
+	-c		-c		-c		-c-par
+			|		|		|		|
+	0		1		2		3		4
+	
+	可以看成
+	1 x 2 FRA,
+	2 x 3 FRA,
+	3 x 4 FRA,
+	三个FRA的合成

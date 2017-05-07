@@ -1,0 +1,9 @@
+利率r
+	r↑ -> PBO ↓
+	interest = PBO * r
+		d(I)/d(r) = PBO + r * d(PBO)/dr
+				  = PBO - r * duratioin * PBO
+	如果久期长，I对r偏导<0
+		r↑ -> I↓
+		
+	

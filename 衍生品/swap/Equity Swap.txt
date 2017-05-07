@@ -1,0 +1,22 @@
+equity swap
+	以股权换固定/浮动利率
+	1. Re 换 fix
+	2. Re 换 float
+	3. Re 换 Re
+	
+
+pricing
+	只有fix可以pricing, 和前面计算方式一样
+	
+valuation
+	V_long = PV(收入) - PV(支出)
+	
+	fix
+		PV(收入 or 支出) = c(B1+B2+B3+B3) + 1 * B4
+		
+	
+	float
+		PV(收入 or 支出) = (1+f1) * B1
+	
+	Re
+		PV(收入 or 支出) = 指数现值/t=0时指数 * 100%
