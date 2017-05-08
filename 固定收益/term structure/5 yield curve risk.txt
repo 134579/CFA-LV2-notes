@@ -5,3 +5,40 @@ risk
 	长短期利率变化方向不同
 2. curvature
 	长中短期利率变化方向不同
+
+例子：
+	一个portfolio,包括：
+	1. 2年期零息债券, D = 2, 40w
+	2. 5年期零息债券，D = 5, 60w
+	问: s2，s5均增加1%时， portfolio的价值变动
+
+	答: 
+	v = par/(1+r)^n
+	dv/dr = -n * par/(1+r)^(n+1)
+		  = -n * v/(1+r)
+	=> dv/v = -n * dr
+	-D = -n = (dv/v)/dr
+	
+	所以dr = 0.01时，dv/v减小 n%
+	
+	v1' = v1 * (1 - 2%) = 39.2w
+		krd1 = 0.8/100 = 0.8%
+	v2' = v2 * (1 - 5%) = 57w
+		krd2 = 3/100 = 3%
+	portfolio' = v1' + v2' = 96.2w
+	D' = 3.8
+	
+	
+key rate duration
+	定义
+	krdi = wi * Di, i = 1..n
+	D = Σ krdi
+	
+	例子：
+	bond	weight	duration	krd		dr		portfolio value change
+	2y		0.1		2			0.2		+1%		-0.2%
+	10y		0.2		10			2		+1.5%	-3%
+	20y		0.4		20			8		+0.8%	-6.4%
+	25y		0.3		25			7.5		-1%		+7.5%
+	total	100%								-2.1%
+	
