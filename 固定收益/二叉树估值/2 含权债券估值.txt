@@ -1,0 +1,114 @@
+1. callable bond
+1.1 定义
+	发行者可以提前赎回的债券
+	便宜
+	Vcallable = Vpure - call option
+	债券价格上升（市场利率下降）时发行者可能提前赎回
+	因此债权价格上不去
+
+2. putable bond
+2.1 定义
+	债权人可以提前提前将债权回售给发行者
+	贵
+	Vputable = Vpure + put option
+	债券价格下跌时可能回售
+	因此债权价格跌不下来
+	
+3. 使用二叉树估值
+	例子：
+	K = 100，coupon rate = 7%
+	i0 = 4.5749%	i1H = 7.1826% cf1H = 99.8296
+					i1L = 5.321% cf1L = 101.5942
+					+ cp = 7
+					
+	注：行权只能在每一次发放coupon之后
+3.1 求callable bond价格
+	cf1H = 99.8296能取到
+	cf1L = 101.5942取不到，价格最多只能100
+	
+	P = ((99.8296 + 7)/(1+4.5749%) + (100+7)/(1+4.5749%)) / 2
+	
+3.2 求putable bond价格
+	cf1H = 99.8296取不到，价格不会低于100
+	cf1L = 101.5942取得到
+	P = ((100 + 7)/(1+4.5749%) + (101.5942+7)/(1+4.5749%)) / 2
+	
+4. 求期权价值
+	Vcallable = Vpure - call
+	 => Vcall = Vcallable - Vpure
+	Vputable = Vpure + put
+	 => Vput = Vputable - Vpure
+	 
+5. 波动率对债权价格影响
+	σ变大 => option价值变大
+	Vcall变大 => Vcallable减小
+	Vput变大 => Vputable变大
+
+6. OAS
+6.1 定义
+	option adjusted price
+	剔除权利的债券的spread，目的是为了去掉期权对债权价格影响，来比较含权和不含权债权
+	
+	callable bond
+		pure bond spread + call spread = callable bond spread
+			8%					2%				10%
+			OAS									z-spread
+	
+	putable bond
+		pure bond spread + option spread = putable bond spread
+			10%					-2%				8%
+			OAS									z-spread
+6.2 计算
+	与z-spread类似，对二叉树上每一个利率加上相同的spread, 重复尝试直到market price = 从二叉树算出的cf
+	
+6.3 结论
+	(1) 含权债券和不含权债权比较要用OAS
+	(2) 风险一样的债券OAS应该一样
+	(3) 如果某个债券OAS较高，说明它被低估
+	(4) OAS可以看成pure bond的spread
+
+6.4 σ和OAS关系
+
+6.5 利率改变带来的影响
+	对含权债券
+		利率降低 => Vcallable涨不上去， Vputable上涨
+		利率增加 => Vcallable降低， Vputable跌不下去
+	对call option
+		利率降低 => Vpure - Vcallable增加(in the money)
+		利率增加 => Vcall降低(out of the money)
+		
+	对put option
+		利率上升 => Vput上升(in the money)
+		理略下降 => Vput下降(out of the money)
+		
+	对effective duration
+		(1) 含权债券久期 < pure bond久期
+		(2) 零息债券久期 = 到期时间
+		(3) 普通债券久期 < 到期时间
+		(4) 完全浮动利率债券久期， P = par, 久期为0
+		(5) 定期重设coupon rate的伪浮动利率债券，久期为到下一个付息日的时间
+		callable bond
+		利率下降时，价格涨不上去dp/dr小，久期小
+	
+	one-side duration
+		up/down: 利率上升/下降
+		one-side up duration: 利率上升时的duration
+			putable bond小
+		one-side down duration
+			callable bond小
+			
+			
+6.6 key rate duartion
+	par rate变动导致债券价格变动
+	(1) 无权债券：
+		到期日对应的par rate对价格影响最大
+	(2) callable:
+		coupon rate低的：很少提前赎回，因为coupon rate够低，所以和无权债券很像
+			key rate duartion和到期日接近
+		coupon rate高的；很可能提前赎回，
+			key rate duration和赎回日接近
+	(3) putable:
+		coupon rate低的；很可能提前售回，
+			key rate duration和售回日接近
+		coupon rate高的；很少提前售回，因为coupon多，所以和无权债券接近
+			key rate duration和到期日接近
