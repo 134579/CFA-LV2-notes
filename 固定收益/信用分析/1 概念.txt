@@ -1,0 +1,27 @@
+1. loss given default
+	风险发生时, 损失的债券价值
+
+2. recovery rate :RR
+	风险发生时, 剩余的债券价值百分比
+
+3. PD
+	possibility of default
+	
+2. PV of expected loss
+	PVEL = value of risk free bond - value of risky bond
+	
+3. 风险中性定价
+	假设year = 1, zero coupon bond
+	
+	par/(1+YTM) =  (par *RR * PD + par *(1-PD)/(1+rf)
+	ytm - rf ≈ PD(1-RR)
+			 = PD * loss given default 
+			 
+	ytm	- rf : 信用风险 + 流动风险
+	
+	PD * loss given default : 信用风险
+	
+	这样估计出来的信用风险比真实的高
+	
+
+	

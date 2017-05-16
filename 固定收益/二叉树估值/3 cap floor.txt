@@ -1,0 +1,46 @@
+1. cap
+	coupon rate < cap, 赋予发行者权利
+	Vcap_floater = Vpure - Vcap
+	
+2. floor
+	coupon rate > floor, 赋予持有者权利
+	Vfloor_floater = Vpure + Vfloor
+
+3. 估值
+	3.1 方法:
+		二叉树
+	
+	3.2 例子：
+	par  = 100， year = 2， float = libor
+	year 0			year1
+	4.5749%			7.1826%
+					5.3210%
+					
+	估值：
+	(1)如果是无权债券
+	(2)cap = 6%
+	(3)floor = 5%
+	
+	答：
+	(1)
+	V = par = 100
+	(2)
+	0	1	2
+		c	c+p
+		
+	cap = 6%
+	year 0			year1
+	4.5749%			7.1826%(只能取6%)
+					5.3210%
+					
+					vh = p(6%+1)/(1+7.1826%) = 98.9
+					vl = p(5.321%+1)/(1+5.321%) = 100
+					
+					+ c1=4.5749% * 100
+	
+	v = ((vh+c1)*0.5 + (vl+c1)*0.5)/(1+4.5749%)
+	  = 99.4741
+	
+	
+	
+	

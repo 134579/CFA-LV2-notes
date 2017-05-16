@@ -1,0 +1,82 @@
+模型
+
+1. 定性模型
+1.1 打分模型
+	1.1.1 特点
+	(1) 常用于个人
+	(2) 不随经济周期波动
+	(3) 稳定
+
+1.2. 信用评级
+	1.2.1 优点
+	(1) 简单易懂
+	(2) 平稳
+	1.2.2 缺点
+	(1) 滞后性
+	(2) 滞后于经济周期
+	(3) 利益冲突
+	
+2. 量化模型
+2.1 structure model
+	B/S
+	A = D 
+		+ E
+	
+	k:债务
+	D:债权人获得 = k	A > k
+				   A	A < k
+	
+				   
+				   
+				   
+		
+	E:股权人获得 = A - k	A > k
+				   0		A < k
+		等价于call on A at K = k
+
+	
+2.2 reduced form model
+	对于资产和债务不好计价的
+	D = E(K/(Π(1+ri))
+	使用历史数据估计违约概率
+	
+
+3. 模型对比 - 重点
+3.1 structure model
+	假设:
+		资产可以交易
+		利率恒定(不随经济周期改变)
+	优点:
+		利用了BSM
+	缺点:
+		假设的B/S太简单, 假设资产可以交易不现实
+		没有考虑经济周期
+3.2 reduced form model
+	假设:
+		债券都是零息债券
+		r随经济周期改变
+	优点:
+		数据可以观测到, 都是历史数据
+		考虑经济周期
+		不对B/S作要求
+	缺点:
+		历史数据可能不准
+		
+		
+3.3 表格
+					structure			reduced
+(1)B/S				Y					N
+(2)资产可交易		Y					N
+(3)债券可交易		N					Y
+(4)option			Y					N
+(5)经济周期			N					Y
+
+4. PVEL计算
+	PVEL = risk free bond - risky bond
+	
+	使用连续复利(e^)
+	假设两个债券coupon, par一样
+	PVEL = Σ PVEL_i + PVEL_par
+		PVEL_i = coupon * e^(-rf*i) - coupon * e^(-(rf + credit spread)*i)
+		PVEL_par = par * e^(-rf*n) - par*e^(-(rf+spread)*n)
+		

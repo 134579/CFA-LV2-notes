@@ -1,0 +1,35 @@
+CDS
+	credit default swap
+	
+	分类
+	(1) 实物交割
+	(2) 现金交割
+		交割差价
+	
+CDS类型
+	single name cds
+	单一债券的cds
+	特点:
+		pari passo:	相同或更高评级的债券违约时, 较低评级的债券的CDS赔付
+		相同或更高评级的债券违约时,按照其中亏损最大的债券赔付
+	
+	index cds
+		CDX
+		保额对portfolio里的债券平均分配
+		portfolio里债券相关性越高,CDS spread越贵
+		
+
+CDS货币化
+	由于CDS对应bond信用变差,CDS spread变高, 以前买的CDS就能以更高的价格卖出,因此可以将CDS卖出获益
+	
+	
+CDS策略
+1. naked cds
+	裸买CDS
+2. long short
+	相同评级的CDS,价格不一样,可以short贵的,long便宜的
+	CDS与bond本身的spread,short贵的
+3. curve trade
+	短期信用变好,长期信用变差 => short短期cds, long长期cds
+	
+	

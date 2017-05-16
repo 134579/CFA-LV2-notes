@@ -1,0 +1,42 @@
+1. rachet bond
+	special cap floater
+	cap = current coupon rate
+	
+	coupon rate 单边下降
+	
+2. convertable bond
+	对持有者有利
+	convertable bond = pure bond + call on stock
+
+2.1 术语
+	2.1.1 conversion ratio
+		一个债券可以转多少股票
+	2.1.2 conversion price
+		call的执行价 = bond issue price/conversion ratio
+	
+	2.1.3 market conversion price
+		bond市场价格/conversion ratio
+		
+	2.1.4 conversion value
+		stock市场价格 * conversion ratio
+	
+	2.1.5 market conversion premium per share
+		market conversion price - stock market price
+	
+	2.1.6 premium over straight value
+		convertable bond/ pure bond - 1
+	
+2.2 σ 影响
+	σ增加 -> call option增加 -> convertable bond增加
+
+2.3 持有可转债还是股票
+	股票上涨 -> stock收益高
+				bond收益低
+				
+	股票下跌 -> stock亏得多
+				convertable bond亏得少
+
+2.4 风险分析
+	以债权形式持有, 利率风险
+	以股票形式持有, 股票价格变动风险
+	
