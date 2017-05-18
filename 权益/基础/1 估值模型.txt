@@ -1,0 +1,12 @@
+绝对估值
+	折现
+		divdend: DDM
+		FCF: FCFF, FCFE
+		residual income: 收益 - 机会成本
+	基于资产的
+		资产 - 负债 : 最差的估值(没有破产时)
+
+相对估值: 价格倍数
+	PE
+	EV/EBITDA
+

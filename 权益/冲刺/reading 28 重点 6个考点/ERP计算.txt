@@ -1,0 +1,27 @@
+1. ERP
+1.1 定义
+	equity risk premium = rm - rf
+
+2. 计算方法
+2.1 历史数据
+	只考定性,
+	2.1.1 计算均值方法
+		算数平均: erp偏大, re偏大
+		几何平均:erp偏小
+	2.1.2 rf取值
+		长期国债: rf偏大 -> erp偏小, re不确定
+		短期国债: rf偏小 -> erp偏大, re不确定
+	2.1.3 幸存者偏差
+		导致erp偏大, re偏大
+	
+2. GGM
+	erp = D1/P0 - g -rf
+	 from p0 = D1/(r-g)
+	 p0,D1均为市场值
+
+	 
+3. macroeconomics model (supply side model)
+	erp = (1+i)*(1+rEg)*(1+pEg) - 1 + Y - RF
+	
+4. survey estimate 不考
+

@@ -1,0 +1,24 @@
+1. justified pe计算 (考点)
+	leading pe = p0/e1
+			   = d1/(r-g) / e1
+			   = (1-b)/(r-g)
+			   
+	trailing pe = p0/e0
+				= (1-b)*(1+g)/(r-g)
+				
+				
+2. normalized eps:从历史eps推测当期eps
+2.1 average eps
+2.2 average roe * equity
+
+3. PEG ratio
+	PEG = PE/年盈利增长率
+		= PE/G
+	越小越好
+	
+	缺点:
+		1. 假设PE和年盈利增长率线性相关
+		2. 没有考虑growth变化带来的风险
+			growth变慢 -> PEG变小风险
+			
+			

@@ -1,0 +1,9 @@
+1. GGM
+	一阶段(不考)
+	
+	两阶段(考)
+		FCFF用r = wacc, 算出来的是firm的价值
+		FCFE用r = re, 算出来的是equity的价值
+	
+	三阶段(不考)
+	

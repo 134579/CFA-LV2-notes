@@ -1,0 +1,22 @@
+1. FCFF
+	FCFF = EBIT*(1-T) + Depr - FC_inv - 		WC_inv
+							固定资产投资	inventory增加
+
+	WC = (current asset - cash) - (current liability - debt)
+	WC_inv = WC_e - WC_b
+
+	FCinv = CAPEX(cappital expenditure)
+		  = Gross_e - Gross_b
+		  
+	FCinv = CAPEX - proceeds 有处置资产
+		  = Gross_e - Gross_b + Gross_disposal
+	
+	
+						
+						
+2. FCFE = FCFF - I * (1-T) + new borrowing
+	net borrowing = Debt_e - Debt_b
+					包括note payable
+
+
+

@@ -1,0 +1,14 @@
+sum of parts valuation
+	母公司为子公司估值之和
+	现象:
+		VA + VB + VC > V(A+B+C)
+		
+		
+	名称:
+		conglomerate discount
+	原因
+	1. 内部资本配置无效性
+		把钱从赚钱的子公司抽出来补贴亏损的子公司
+	2. reverse synergy
+		收购一个完全不相关的公司,要付出收购的成本
+	3. 计算错误

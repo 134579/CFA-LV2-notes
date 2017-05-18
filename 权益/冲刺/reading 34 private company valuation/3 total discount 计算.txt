@@ -1,0 +1,11 @@
+total discount计算
+	例子:
+	control premiuum = 20%
+	DLOM(缺少流动性溢价) = 30%
+	discount for lack of market
+	求total discount?
+	
+	1. 求DLOC = 1 - 1/(1+20%)
+		discount for lack of control
+	
+	total discount = 1 - (1 - DLOC)*(1 - DLOM)

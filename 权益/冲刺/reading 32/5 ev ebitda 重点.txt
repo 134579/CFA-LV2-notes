@@ -1,0 +1,15 @@
+ev/ebitda
+ev = 市值 + 总负债 - 总现金 
+   = equity + debt - cash & short investment
+	 FV			FV优先
+				没有FV用BV
+				只算长期的debt
+   = 市值 + 净负债
+   = 股票价值 +　债券价值
+   和PE类似, 也是越低越好
+优点
+1. 不同公司可以比较
+	剔除leverage
+	剔除税率
+	剔除折旧方法不同
+缺点不考

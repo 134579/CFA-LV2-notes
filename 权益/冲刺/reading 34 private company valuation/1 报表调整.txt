@@ -1,0 +1,9 @@
+1. normalize earnings
+	1. 去掉nonrecurring items
+	2. 去掉tax-motivated expense, 虚增费用
+	3. 去掉non-operating items, 
+	
+2. strategic and nonstrategic buyers
+	strategic: 是否有synergy, 导致COGS变化...
+	
+	

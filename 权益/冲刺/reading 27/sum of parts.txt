@@ -1,0 +1,10 @@
+sum of parts valuation
+	母公司为子公司估值之和
+	现象:
+		A + B + C 分开估值之和 > (A+B+C) 整体估值
+	名称:
+		conglomerate discount
+	原因
+	1. 内部资本配置无效性
+	2. reverse synergy
+	3. 计算错误
