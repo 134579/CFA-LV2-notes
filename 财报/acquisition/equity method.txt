@@ -1,10 +1,12 @@
 	20%-50%
 	incluence
 
+	net identifiable asset = current asset + PP&E - liablity
+		不包括被收购公司goodwill
+	
 一项记账
 	a公司花费600收购b公司，b公司net identifiable asset = 560
 	记账方法：
-		
 		a's B/S
 		cash -= 600
 		invest += 600
@@ -12,7 +14,6 @@
 				book value = 440
 				appreciation = 120 : 溢价
 			goodwill = 40
-
 	goodwill:一项记账， 不单独列出
 
 问题：
