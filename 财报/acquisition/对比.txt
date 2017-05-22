@@ -1,0 +1,16 @@
+NI相同
+扣除MI后三种方法equity一样，加上MI后acquire metnod的equity最高
+sales,cost,asset，liability，acquire method最高
+
+
+假设P收购t
+				Equity method			Acquisition method
+		
+Asset											high(P's + T's)
+Liablity										high(P's + T's)
+Equity											high(P's + MI)
+
+Revenue											high(P's + T's)
+COGS											high(P's + T's)
+NI相同		P's + equity income		==		P's + T's - MI income
+									

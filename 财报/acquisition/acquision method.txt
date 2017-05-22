@@ -1,0 +1,62 @@
+acquisition method
+将子公司的Asset,Liablility全部加入母公司报表，母公司Cash减少，Equity增加minority interest少数股东权益
+
+
+P花费800收购S的80%股份，
+	P's B/S
+	Asset															Liablility
+	cash -= 80%(S's equity)											liability += S's liability
+	invest asset += S's asset										Liability = P's liability + 100% S's liability 
+	-> Asset = P's asset + 100% S's asset -  80%(S's equity)		 
+			= P's asset + 20% S's asset + 80% S's liability
+																	
+																	MI = 20% S's equity
+																	Equity
+																	equity += 0
+																	-> Equity = P's equity 
+	两边依然是平的
+	
+	Asset = Liability + MI + Equity
+	
+	
+	B/S步骤：
+	1. 去掉母公司invest那项
+	2. 加上子公司asset,liability
+	3. equity不变
+	4. 计算goodwill(GAAP:full GW, IFRS:full or partial GW) 
+		partial GW = paid - net identifiable asset
+	5. 计算mi
+		如果完全收购, 则计算出的MI = 0
+	
+	
+	
+例子
+2007.1
+	A收购100%的T
+	收购前																										A花费500收购T 100%股份后:
+	B/S
+	A:							T:							T's Fair value:										A:
+	Asset																										Asset
+	cash = 600					30							30													cash = 600 - 500 + 30 = 130
+	inventory = 150				50							80													inventory = 150 + 80 = 230
+																													BV = 150 + 50 = 200
+																													appr = 80 - 50 = 30
+	AR = 150					50							50													AR = 150 + 50 = 200
+	F/A = 400					250							300													F/A = 400 + 300 = 700
+																													BV = 400 + 250 = 650
+																													appr = 300 - 250 =  50
+	I/A = 0						0							100													I/A = 100
+																												GW = 500 - (560 - 180) = 120
+-	Asset = 1300				380							560													Asset = 130 + 230 + 200 + 700 + 100 + 120 = 1480
+
+	Liability																									Liability
+	AP = 400					180							180													AP = 400 + 180 = 580
+-	Liability = 400				180							180													Liability = 580
+
+	Equity																										Equity
+	Capital = 550				150							380													Capital = 550
+	R/E = 350					50							0													R/E = 350
+-	Equity = 900				200							380													Equity = 900
+											
+																												MI = Asset - Liability - Equity = 0
+	
