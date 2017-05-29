@@ -13,6 +13,7 @@ PBOº∆À„£∫
 	
 funded status
 	funded status = FV of plan asset - PBO
+	BASE∑®‘Ú
 	
 	
 FV of plan asset

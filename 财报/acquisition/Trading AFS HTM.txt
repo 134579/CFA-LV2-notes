@@ -19,7 +19,10 @@
 		joint venture(合资公司)
 			shared control
 			1/n
-			equity method(or proportional consolidation)
+			GAAP: equity method
+			IFRS : equity method or proportional consolidation
+			
+			
 			
 		
 

@@ -1,0 +1,51 @@
+共同点:
+	1. Asset
+		Asset下的plan asset相同
+		Asset:
+		FV_e = FV_b 
+				+ employer contribution
+				+ `actural` return
+				- compensation paid to employee
+				
+	2. Liability
+		Liability下的PBO计算方式相同
+		Liability:
+		PBO_e = PBO_b 
+				+ CSC 
+				+ interest cost
+				+ PSC
+				+ acturial loss - acturial gain
+				- compensation paid to employee
+	
+	2. I/S
+		一定发生的CSC, interest cost都进利润表
+		plan asset的收益进I/S
+		I/S:
+		+ revenue
+		...
+		- CSC
+		- interest cost
+		+ `expected` return of plan asset
+		...
+		= NI
+	
+	
+不同点:
+	1. PSC
+		IFRS: 进I/S
+		GAAP: 摊销进I/S, 未摊销的进OCI
+	
+	2. B/S中actural return 和 I/S中expected return 的不同导致的精算误差
+		IFRS: 进OCI
+		GAAP: 摊销进I/S, 未摊销的进OCI
+		
+	3. acturial gain/loss
+		IFRS: 进OCI
+		GAAP: 摊销进I/S, 未摊销的进OCI
+	
+	4. I/S中, plan asset的expected return
+		IFRS: r * FV_b
+		GAAP: E(r) * FV_b, 因为只有美国的股市有稳定收益
+	
+	
+	
