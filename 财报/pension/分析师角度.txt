@@ -1,0 +1,28 @@
+
+修改假设
+	利率r
+		r↑ -> PBO ↓
+		interest = PBO * r
+			d(I)/d(r) = PBO + r * d(PBO)/dr
+					  = PBO - r * duratioin * PBO
+		如果久期长，I对r偏导<0
+			r↑ -> I↓
+		
+	
+调整利润表
+	total periodic pension cost(net periodic pension cost)
+	 = Δ(funded status) - employer's contribution
+	
+	tppc = FV_e - PBO_e - FV_b + PBO_b - E.C
+		 = Δ(FV) - Δ(PBO) - E.C
+		 = AR - (CSC + I + PSC + A/L/G)
+	
+	特点:
+		tppc > 0 => 养老金为净收入
+		
+调整现金流量表
+	contribution < tppc,说明雇主打款不足,相当于向员工借款,CFF增加,CFO减少
+		CFF += (tppc - contribution)*(1-t)
+		CFO -= (tppc - contribution)*(1-t)
+	
+	contribution > tppc. 相当于雇主提前还款

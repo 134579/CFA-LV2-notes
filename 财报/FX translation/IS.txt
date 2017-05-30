@@ -1,0 +1,4 @@
+			current rate method | temporal method
+					
+Sales			average	rate	|	history rate
+COGS			average 		|	history		

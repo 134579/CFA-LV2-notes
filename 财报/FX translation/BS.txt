@@ -1,0 +1,8 @@
+					current rate method | temporal method
+Money assset/liab		last rate		|	last rate
+Non-money asset/liab	last rate		|	history rate
+
+Capital					history			|	history
+R/E						MIXED			|	MIXED
+
+Equity					last rate		|	MIXED
