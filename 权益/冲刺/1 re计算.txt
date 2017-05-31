@@ -55,3 +55,20 @@
 3. WACC 计算
 	3.1 公式
 		WACC = D/A * Rd *(1-tax) + E/A * Re
+		
+4. g计算
+	g: divdend growth rate
+	RR: retention ratio = 1 - divdend pay ratio
+	计算g:
+	year 0: 
+		E0 => NI0 => D0 = NI0 * (1-RR)
+	year 1:
+		ΔE = NI0 * RR
+			=> ΔNI = ΔE * NI0/E0 = ΔE * ROE
+			=> ΔD = ΔNI * (1-RR) = NI0 * RR * ROE * (1-RR)
+		
+		g = ΔD/D0 = RR * ROE
+	
+	
+	
+	

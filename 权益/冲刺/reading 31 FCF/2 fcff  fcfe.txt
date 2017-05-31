@@ -1,25 +1,47 @@
-1. FCFF
-	FCFF = EBIT*(1-T) + Depr - FC_inv - 		WC_inv
-							固定资产投资	inventory增加
+1. FCF与DDM适用范围
+	DDM适用于对minority share估值
+	FCF适用于对控股股票估值
 
-	WC = (current asset - cash) - (current liability - debt)
-	WC_inv = WC_e - WC_b
 
-	FCinv = CAPEX(cappital expenditure)
-		  = Gross_e - Gross_b
+
+2. FCFF
+	2.1 从NI
+		FCFF = NI + interest*(1-t) + 	NCC		- WCInv - FAInv
+									Depr + Armo
+	
+			
+
+		WC = (current asset - cash) - (current liability - debt)
+		WC_inv = WC_e - WC_b
+
+		FCinv = CAPEX(cappital expenditure)
+			= Gross_e - Gross_b
 	
 	
-	FCinv = CAPEX - proceeds 有处置资产
-		  = Gross_e - Gross_b + Gross_disposal
+		FCinv = CAPEX - proceeds 有处置资产
+			= Gross_e - Gross_b + Gross_disposal
 	
 	
-	BV_b + FCinv - Depr + 处置收入 = BV_e
-	 FCinv = BV_e - BV_b + Depr - 处置收入
+		BV_b + FCinv - Depr + 处置收入 = BV_e
+		FCinv = BV_e - BV_b + Depr - 处置收入
+		
+	2.2 从EBIT
+		EBIT*(1-t) = NI + interest*(1-t)
+			=> FCFF = EBIT*(1-t) + NCC - WCInv - FAInv
 						
-						
-2. FCFE = FCFF - I * (1-T) + new borrowing
+3. FCFE
+	FCFE = FCFF - I * (1-T) + new borrowing
 	net borrowing = Debt_e - Debt_b
 					包括note payable
 
 
 
+
+4. 估值
+	计算方式与DDM相同
+	一阶段(不考)
+	两阶段(考)
+		FCFF用Re = WACC, 算出来的是firm的价值
+		FCFE用Re = Re, 算出来的是equity的价值
+	三阶段(不考)
+	
