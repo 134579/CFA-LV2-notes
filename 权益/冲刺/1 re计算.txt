@@ -37,10 +37,10 @@
 		三种考法
 		2.1 直接计算Required Return
 			RequiRed Return = Rf
-								+ market risk premium					-							-
-								+ size risk premium	 小-大				- farma french model		-
-								+ style risk premium 成长-价值			-							-  PSM
-								+ liquidity risk premium 流动性差-好								-
+								+ β_mkt * market risk premium					-							-
+								+ β_smb * size risk premium	 小-大				- farma french model		-
+								+ β_hml * style risk premium 成长-价值			-							-  PSM
+								+ β_liq * liquidity risk premium 流动性差-好								-
 		2.2 通过β判断公司类型
 			β > 0 => 是premium对应的前一种公司
 			
