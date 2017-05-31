@@ -1,0 +1,9 @@
+economic income
+	第i年的EI
+	EI = CF_i - economic Depr_i
+	   = CFi - (MVi-1 - MVi)
+	MVi: i年末, 项目的净现值
+
+economic profit
+	EP = EBIT(1-T) - WACC*capital
+

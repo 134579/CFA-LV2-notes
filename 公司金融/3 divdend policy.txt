@@ -1,0 +1,6 @@
+constant divdend pay ratio policy
+	D_i = EPS_i * divdend pay ratio
+
+stable divdend policy
+	D_i = D_i-1 + (EPS_i - EPS_i-1) * divdend pay ratio / adjustment year
+	

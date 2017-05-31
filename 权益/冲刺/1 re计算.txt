@@ -1,0 +1,57 @@
+1. ERP
+	1.1 定义
+		equity risk premium = Rm - Rf
+
+	1.2 计算方法
+		1.2.1 历史数据
+			只考定性,
+			2.1.1 计算均值方法
+				算数平均: erp偏大, re偏大
+				几何平均:erp偏小
+			2.1.2 Rf取值
+				长期国债: Rf偏大 -> erp偏小, re不确定
+				短期国债: Rf偏小 -> erp偏大, re不确定
+			2.1.3 幸存者偏差
+				导致erp偏大, Re偏大
+			
+		1.2.2 GGM
+			P0 = D1/ (r-g)
+			 => r = g + D1/P0
+			 => ERP = r - Rf = g + D1/P0 -  Rf
+			 D1, P0均为整个市场的股利, 价格
+
+			 
+		1.2.3 macroeconomics model (supply side model)
+			erp = (1+i)*(1+rEg)*(1+pEg) - 1 + Y - Rf
+		
+
+2. Re计算
+	2.1. capm
+		Re = Rf + β(Rm - Rf)
+		用于上市公司
+		2.1.2 非上市公司(pure play method)
+			β_无杠杆 = β * E/(E + D(1-t) )
+			β_private = β_无杠杆 * (E_private + D_private * (1-t) )/E_private
+	
+	2.2 multifactor
+		三种考法
+		2.1 直接计算Required Return
+			RequiRed Return = Rf
+								+ market risk premium					-							-
+								+ size risk premium	 小-大				- farma french model		-
+								+ style risk premium 成长-价值			-							-  PSM
+								+ liquidity risk premium 流动性差-好								-
+		2.2 通过β判断公司类型
+			β > 0 => 是premium对应的前一种公司
+			
+		2.3 判断FFM与PSM区别
+			PSM有流动性风险溢价  
+			
+	2.3 build up method
+		Re = Rf + Σpremium or discount
+		相当于β等于1的多因子模型
+		由于非上市公司β难算,所以假设β等于1
+		
+3. WACC 计算
+	3.1 公式
+		WACC = D/A * Rd *(1-tax) + E/A * Re

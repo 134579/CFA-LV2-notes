@@ -1,0 +1,72 @@
+计算NPV
+	1. expansion project(重点):
+		阶段:
+			1. initial stage: 初始投资
+				cf = -FCInv - NWCInv
+					NWCinv = working capital asset - working capital liability
+					working capital: cash, payable, receivable, inventory...
+					
+			2. operating stage: 经营阶段
+				cfo = (S-C-D)*(1-t) + D
+					= EBIT * (1-t) + D
+					= (S-C)*(1-t) + D * t
+					S: sales, cash收入, 和利润表不一样, 为实际cash收入
+					C: cost, cash cost(COGS)
+					D: depression, 由于不是cash, 所以再加回来
+					t: tax rate
+			3. terminal stage: 终结阶段
+				cf = NWCInv + Sal_t - (Sal_t - BV) * t
+					NWCInv: 假设营运资本完全收回
+					Sal_t: salvage, 固定资产残值, fair value
+					BV: 固定资产book value
+					(Sal_t - BV) * (1-t): 交税
+		
+		
+	2. replacement project
+		替代老项目
+		阶段
+			1. initial stage: 初始阶段
+				cf = -FCInv - NWCInv + Sal_old_0 - (Sal_old_0 - BV_old_0) * t
+					Sal_old_0: 老项目残值
+			2. operating stage:
+				cf = (ΔS - ΔC) *(1-t) + ΔD * t
+					ΔS: 新老项目Sale之差
+			
+			3. terminal stage:
+				cf = NWCInv + Sal_t - (Sal_t - BV) * t  
+			
+期限不同项目			
+	1. 最小公倍数法(基本不考)
+
+	2. 等价永续年金法(equivalent annual annuity, EAA)
+		假设两个项目都永续进行下去
+		例子:
+			A, 3年, NPV = 300w
+			B, 4年, NPV = 400w
+			r = 10%
+		解:
+			A等价永续年金:
+				计算方法1:
+				year 0		3		6
+					NPV		NPV		NPV
+					d' = (1+10%)^3
+					EAA = NPV + NPV/d + NPV/d^2 + ...
+						= NPV/(1-1/d) = NPV * d/(d-1)
+					EAA = NPV * 1.1^3 / (1.1^3-1) = 1206.34
+			
+				计算方法2:
+					PV = NPV, I/Y = 10, N = 3, FV = 0
+					 => PMT = 120.634
+					 
+					EAA = PMT/r = 1206.34
+				
+			B等价永续年金:
+				EAA = (PMT = 126.18)/r = 1261.8
+				
+			∴B比A好
+			
+含权项目
+	给定Option现金流, 将Option现金流折现,
+		如果是条件现金流,则
+		Value_option =  Σmax(NPV_i,0) * Pi, i = 1,2... 为情况的个数
+		

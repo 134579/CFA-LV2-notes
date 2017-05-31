@@ -7,11 +7,14 @@
 
 	FCinv = CAPEX(cappital expenditure)
 		  = Gross_e - Gross_b
-		  
+	
+	
 	FCinv = CAPEX - proceeds 有处置资产
 		  = Gross_e - Gross_b + Gross_disposal
 	
 	
+	BV_b + FCinv - Depr + 处置收入 = BV_e
+	 FCinv = BV_e - BV_b + Depr - 处置收入
 						
 						
 2. FCFE = FCFF - I * (1-T) + new borrowing

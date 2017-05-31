@@ -1,2 +1,7 @@
+DDM模型
 自由现金流模型 1case
 剩余收益 residual income 1case
+相对估值模型
+
+折现率计算
+private company估值

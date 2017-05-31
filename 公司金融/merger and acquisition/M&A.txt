@@ -1,0 +1,52 @@
+1. merge类型
+	horizonal merge: 同行业并购
+	vertical merge: 上下游并购
+		上游: intel, 莱卡, 康宁, 
+		下游: 苹果, 三星, 索尼
+		backward merge: 下游收购上游, 苹果收购intel
+		forward merge: 上游收购下游, intel收购苹果
+	conglomerate merge: 不同行业收购
+	
+
+2. 收购类型
+2.1 收购股票
+	
+
+2.2 收购资产
+
+3. HHI
+3.1 计算
+3.2 HHI与并购
+							垄断程度			并购后HHI变化		政府审查
+	HHI < 1000:				不垄断					随意				无
+	1000 < HHI < 1800:		稍微垄断				>=100				可能challenge
+	HHI > 1800				高度垄断				>=50				一定challenge
+
+4. synergy的计算
+	A收购T:
+	V_AT = V_A + V_T + synergy - cash
+	cash: A给B的股东的现金
+	
+	例子:
+		收购前:
+		stock	price	shares
+		A		$50		100M
+		T		$25		60M
+		A按照每股35$收购T所有股份, 其中现金支付23$, 剩下的12$使用A的股票支付.
+		收购后, A股价为53$.
+	求: synergy
+	
+	答:
+	V_AT = V_A + V_T + synergy - cash
+	V_A = 100M * 50 = 5kM
+	V_T = 25 * 60M = 1.5kM
+	cash = 23 * 60M = 1.38kM
+	收购后, A公司股数为:
+	shares = 100 + 12 * 60M / 50 = 114.4M
+		其中12 * 60M / 50为增发的股数
+	P = 53$
+	V_AT = 114.4M * 53 = 6.063 kM
+	
+	synergy = 6.063 - 5 - 1.5 + 1.38 = 0.943k = 943$
+	
+	
