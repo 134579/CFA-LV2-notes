@@ -29,22 +29,25 @@
 	2.1. capm
 		Re = Rf + β(Rm - Rf)
 		用于上市公司
-		2.1.2 非上市公司(pure play method)
+		2.1.1 非上市公司(pure play method)
 			β_无杠杆 = β * E/(E + D(1-t) )
 			β_private = β_无杠杆 * (E_private + D_private * (1-t) )/E_private
 	
+		2.1.2 β调整
+			blume β = β * 2/3 + 1/3
+	
 	2.2 multifactor
 		三种考法
-		2.1 直接计算Required Return
+		2.2.1 直接计算Required Return
 			RequiRed Return = Rf
 								+ β_mkt * market risk premium					-							-
 								+ β_smb * size risk premium	 小-大				- farma french model		-
 								+ β_hml * style risk premium 成长-价值			-							-  PSM
 								+ β_liq * liquidity risk premium 流动性差-好								-
-		2.2 通过β判断公司类型
+		2.2.2 通过β判断公司类型
 			β > 0 => 是premium对应的前一种公司
 			
-		2.3 判断FFM与PSM区别
+		2.2.3 判断FFM与PSM区别
 			PSM有流动性风险溢价  
 			
 	2.3 build up method
