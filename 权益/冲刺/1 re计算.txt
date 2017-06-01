@@ -57,7 +57,9 @@
 		
 3. WACC 计算
 	3.1 公式
-		WACC = D/A * Rd *(1-tax) + E/A * Re
+		WACC = D/(D+E) * Rd *(1-tax) + E/(D+E) * Re
+			D: B/S中liability中的Debt的市场价值
+			E: Equity的市场价值 = shares * P0
 		
 4. g计算
 	g: divdend growth rate

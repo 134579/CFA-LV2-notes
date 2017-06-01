@@ -11,7 +11,7 @@
 	
 			
 
-		WC = (current asset - cash) - (current liability - debt)
+		WC = (current asset - cash) - (current liability - debt(short term))
 		WC_inv = WC_e - WC_b
 
 		FCinv = CAPEX(cappital expenditure)

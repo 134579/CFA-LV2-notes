@@ -1,5 +1,5 @@
 ev/ebitda
-ev = 市值 + 总负债 - 总现金 
+ev = 市值 + 总负债 - 总现金
    = equity + debt - cash & short investment
 	 FV			FV优先
 				没有FV用BV
