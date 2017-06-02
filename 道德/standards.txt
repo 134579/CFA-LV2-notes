@@ -20,7 +20,113 @@
 			个人原因, 破产, 不属于misconduct
 	
 2. integrity of capital market, 资本市场信誉
+	2.a NMI, non public material information
+		自己不能用, 也要阻止其他人用
+		material: 会对股价产生重大影响
+			知名分析师的报告
+		nonpublic:
+			选择性披露违反NMI
+			发朋友圈不算public
+		mosaic theory
+						material	non-material
+		public 				y			y
+		nonpublic			no			y
+		
+	2.b market manipulation
+		散播谣言
+		虚增交易
+			特例:
+				增加市场流动性
+				避税
+				特定策略
 	
+3. duty to client
+	3.a loyalty, prudence and care
+		识别客户
+			pension fund 受益人是员工
+		是否适合客户
+		soft dollar:
+			对客户有利可以收
+		proxy voting:
+			代理客户行使投票权
+	3.b fair dealing
+		fair ≠ equal
+			可以提供差异化服务, 但要披露
+		
+		若投资建议改变, 要第一时间通知所有客户	
+		家庭成员视为普通账户, 夫妻账户视为自己账户
+	3.c suitability
+		写IPS
+		适合:
+			按portfolio
+			jjjl不对某一个具体的客户负责, 只对整个基金负责
+			IPS每年更新一次
+	3.d performance presentation
+		不能保证收益率
+		不能选择性presentation
+		允许简单披露, 但要提供详细的信息获取方式
+	3.e preservation of confidentialality
+		保密
+		例外:
+			客户违法
+			可以向服务于同一个客户的同事披露
+4. duty to employer
+	4.a loyalty
+		业余时间可以做自己的事
+		离职时:
+			不能带走前雇主任何东西
+			不能带走客户名单
+			知识, 技能可以带走
+			即使原雇主不需要的材料, 也不能带走
+		社交网络
+		whistle blowing
+			在职揭发
+				要是对资本市场有利, 对客户有利, 
+		兼职也要对雇主loyalty
+	4.b additional compensation
+		披露
+	4.c responsibility of supervisor
+		积极预防
+		及时制止下属违法, 要有惩罚措施
+		可以把supervisor责任委托给他人, 但自己不能免责
+		
+5. investment
+	5.a diligence and reasonable basis
+		团体研报:
+			不能少数服从多数
+			意见不同可以不签字
+		热门股票:
+			太忙, 没时间分析, 推荐热门股票, 违反reasonable basis
+		模型:
+			使用者: 不需要成为专家, 但要知道模型的假设和限制
+			
+	5.b communication with client
+		充分披露
+		区分fact和opinion
+		可以简单披露, 但要提供详细地址
+	5.c record retention
+		如果当地法律要求, 按照法律来
+		法律没要求, 保留7年
+		
+6. conflict of interest
+	6.a disclosure of conflict
+		利益冲突公司放入restricted list, 在研报上不对它发表评论
+	6.b priority of transaction
+		客户 > 公司 > 自己
+	6.c referral fee
+		介绍费
+		可以收, 但要披露
+7. responsibility as member
+	7.a conduct as members and candidates
+		不要:
+			作弊
+			泄露考试信息
+			损害协会利益
+	7.b reference to institute, designation, program
+		CFA
+			形容词, 不是名词
+		不能说自己预期什么时候获得chart
+		CFA不保证收益率
 		
 		
 	
