@@ -1,0 +1,26 @@
+1. 分类
+	energy: 能源, crude oil, 原油
+	grains: 谷物
+	industry metal: 工业金属
+	precious metal: 金, 银, 铂金
+	livestock: 牲畜
+	softs(cash corps): 经济作物 
+
+2. future 理论
+	backwardation: 贴水, future price < spot price
+	contango: 升水, future price > spot price
+	
+	insurance theory: should backwardation
+		大部分都是期货的卖方, 所以期货价格下跌
+	hedging pressure: backwardation or contango depends on hedging power of long short
+	storage theory:  should contango
+	
+3. 投资future收益
+	spot return: 期货合约价格变动带来的收益
+		
+	roll return: 转仓的收益和损失
+		老合约到期, 要买新合约时
+		backwardation: cause roll return > 0
+		contango: cause roll return < 0
+		
+	collateral return: 保证金利息收入

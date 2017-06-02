@@ -1,5 +1,7 @@
 equity - 40m
 derivatives +60m
+fixed income +80m
+
 
 + 财务 3case 
 	养老金

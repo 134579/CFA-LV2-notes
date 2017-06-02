@@ -1,0 +1,92 @@
+1. private estate
+	1.1 定义
+		direct invest: 直投
+	1.2 目标
+		1.2.1 office: 
+			gross lease: 打包价
+			net lease: 租户还需要负责水电费
+			判断: 是否有reimbursement(报销)
+		1.2.2 retail, 商场
+			租金还包括返点, 销售额越高, 租金会增加
+			
+			
+2. 估值
+	2.1 investment value
+		= 房子本身价值 + synergy
+		是房子的最高的价值
+		
+	2.2 income approach, 类似 dcf
+		2.2.1 direct capitalization(single stage)
+			2.2.1.1 常规方法
+				V0 = CF1/(r-g)
+					CF1 = NOI, net operating income
+					NOI = 假设全部租出去收到的租金 + other income - expense
+					
+				V0 = NOI/(r-g)
+				r - g: cap rate
+			
+			2.2.1.2 stabilized NOI
+				NOI_0 = 100w, g=5%, r = 10%,
+				假设第五年发生异常情况, NOI_5 = 50w, 求V0
+				答:
+				假设第五年异常不存在,
+				V0_fake = NOI_0 * (1+g)/ (r-g)
+				但是第五年实际NOI = 50w, 而不是 NOI_0*(1+g)^5,
+				so 
+				V0_real = V0_fake - (NOI_0*(1+g)^5 - 50w)/(1+r^5)
+				本质:
+				NOI的临时变化只影响当年
+		
+		2.2.2 DCF method, 两阶段模型
+			V0 = ΣNOI_i/(1+r1)^i + TV/(1+r2)^n
+				TV: terminal value
+				
+			例子:
+			假设n=3
+			0		3			inf
+			g1=10		g2=5
+			r1=8		r2=7
+			PV(NOI_1) = NOI_0(1+g1)/(1+r1)
+			PV(NOI_2) = NOI_0(1+g1)^2/(1+r1)^2
+			PV(NOI_3) = NOI_0(1+g1)^3/(1+r1)^3
+			
+			TV_3 = NOI_3 * (1+g2)/(r2-g2)
+			PV(TV_3) = TV_3/(1+`r2`)^3
+			
+			V0 = PV(NOI_1) + PV(NOI_2) + PV(NOI_3) + PV(TV_3)
+			
+		2.2.3 cap rate
+			terminal cap rate: n->inf, r2 - g2
+				又名residual cap rate
+			going in cap rate: 1-n, r1 - g1
+			
+	2.3 cost approach
+		2.3.1 replacement cost
+			重新盖一个一摸一样的新房子的价值, 等于现在的老房子的价值 + ...
+		2.3.2 reproduction cost
+			重新盖一个一摸一样的老房子的价值, 等于现在的老房子的价值
+			
+			replacement cost
+				- depr
+				- curable gain(修改老房子的设计等,导致的房子净值增加 > 修改成本)
+				- location变动带来的影响
+				+ 土地价值
+			= reproduction cost
+			注: replacement cost不包括土地价值, 只包括房屋价值
+			
+	2.4 comparison approach
+		A
+		类似的房子:
+		B: 1000/m2
+		C: 2000/m2
+		D: 1500/m2
+		对B,C,D进行调整, 得到调整后单价, 求平均即为A的单价	
+		
+3. 求最大贷款额
+	3.1 debt service coverage ratio
+		DSCR = NOI_1 / interest_1
+			interest_1 = loan * interest rate
+		
+	3.2 long to value
+		LRV = loan/ value
+			

@@ -1,0 +1,23 @@
+1. REIT
+	real estate investment 基金
+2. REOC
+	real estate 公司
+	
+	REIT总是比REOC好, 因为REIT免税
+	
+3. 估值
+	3.1 NAVPS
+		net asset value per share = (Asset - Liablity)/shares
+			Asset = 
+			房子价值: NOI_1/(r-g)
+			+ 其他资产
+	
+	3.2 P/FFO
+		price / FFO
+			FFO: fund from operation
+		估值:
+			V0 = 本REIT的FFO * 行业P/FFO
+	
+	3.3 P/AFFO
+		估值:
+			同P/FFO
