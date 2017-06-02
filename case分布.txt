@@ -1,18 +1,15 @@
 equity - 40m
 derivatives +60m
 fixed income +80m
-
+alternative +110m
 
 + 财务 3case 
 	养老金
 	金融资产
 	汇率转换
-	*综合
-	
+	*综合	
 	
 + Equity 3个
-
-职业伦理 2个 3 - 4
 
 + 衍生品 2个 9-10
 
@@ -21,7 +18,9 @@ fixed income +80m
 + 企业理财 不出意外1个case
 	百题.case 1,P164,Capital budgeting
 
-其他类投资 可能两个 11-12
++ 其他类投资 可能两个 11-12
+
+职业伦理 2个 3 - 4
 
 组合，12 - 1
 数量，1 - 2
