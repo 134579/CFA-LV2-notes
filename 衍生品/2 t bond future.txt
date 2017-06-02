@@ -19,6 +19,8 @@ conversion factor
 	计算方式：
 		cf = (PV of bond i)/(PV of hypothetical bond) at time = T (future expire day)
 		   = 到期时，国债i现值/标准国债现值
+		   
+		一个国债i相当于cf_i个标准国债
 
 clean/dirty price
 	dirty price：真实现价，按这个价格交易，在coupon派发前后会突变
@@ -39,6 +41,7 @@ pricing
 	
 	FP_clean = FP_dirty - AI_T 
 			 = (S_0 + AI_0) * (1+Rf)^T - FVC - AI_T
+	
 	
 	标准国债期货报价
 		FP_standard = FP_A / conversion factor of A

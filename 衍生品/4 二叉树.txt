@@ -16,3 +16,18 @@
 	
 	Pu = (1 + Rf - d)/(u - d)
 	
+	
+利率二叉树
+	call option on interest rate: option to gain max(0, Rt - K) * NP at stike date
+	Pu = Pd = 1/2
+	
+	例子:
+			R1+
+			C1+=max(0,R1+ - K)
+	R0	
+			R1-
+			C1-=max(0,R1- - K)
+			
+			
+			
+	V(call) at 0 = (C1+ * 0.5 + C1- * 0.5)/(1+R0)
