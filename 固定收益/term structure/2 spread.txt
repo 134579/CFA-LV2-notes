@@ -1,26 +1,30 @@
 1. swap spread
-1.1 定义
-	swap spread = swap rate - 国债收益率
+	1.1 定义
+		swap spread = swap rate - 国债收益率
+		表示金融机构风险
 
-2. I spread
-2.1 定义
-	interpolation spread，线性插值法
-	I spread = 公司债收益率 - swap rate（线性插补的）
+2. I spread, interpolation spread
+	2.1 定义
+		interpolation spread，线性插值法
+		I spread = 公司债收益率 - swap rate（线性插补的）
+		表示公司债风险
  
-3. Z spread
-3.1 定义
-	Z spread = 公司债 - 国债收益率
-3.2 计算
-	P = Σ CFi/(1+si+Z spread)^i
-	获取市场价格P,s1,s2..., 然后用二分法计算Z spread
+3. Z spread, zero volatility
+	3.1 定义
+		Z spread = 公司债 - 国债收益率
+		表示公司债风险
+		
+	3.2 计算
+		P = Σ CFi/(1+si+Z spread)^i
+		获取市场价格P,s1,s2..., 然后用二分法计算Z spread
 	
 4. Ted spread
-4.1 定义
-	euro dollar - T-bill
-	Ted spread = Libor - 美国国债收益率
+	4.1 定义
+		euro dollar - T-bill
+		Ted spread = Libor - 美国国债收益率
 
 5. Libor-OIS spread
-5.1 定义
-	OIS = overnight index swap rate
-	Libor-OIS spread = Libor - OIS 
-	唯一期限不一致的两个收益率之差
+	5.1 定义
+		OIS = overnight index swap rate
+		Libor-OIS spread = Libor - OIS 
+		唯一期限不一致的两个收益率之差
